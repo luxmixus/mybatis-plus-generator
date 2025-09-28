@@ -378,7 +378,7 @@ public class StrategyConfig implements ITemplate {
         /**
          * 额外字段策略
          *
-         * @param extraFieldStrategy 额外字段策略, BiFunction<String, TableField, Boolean>, 3个泛型参数分别为sql运算符,表字段信息,是否生成
+         * @param extraFieldStrategy 额外字段策略, 3个泛型参数分别为sql运算符,表字段信息,是否生成
          * @return this
          */
         public Adapter extraFieldStrategy(BiFunction<String, TableField, Boolean> extraFieldStrategy) {

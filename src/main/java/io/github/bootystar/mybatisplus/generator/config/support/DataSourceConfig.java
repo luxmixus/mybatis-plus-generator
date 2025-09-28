@@ -129,8 +129,6 @@ public class DataSourceConfig {
     /**
      * 查询方式
      *
-     * @see DefaultQuery 默认查询方式，配合{@link #getTypeConvertHandler()} 使用
-     * @see SQLQuery SQL语句查询方式，配合{@link #typeConvert} 使用
      * @since 3.5.3
      */
     @Getter
@@ -223,7 +221,6 @@ public class DataSourceConfig {
      * 这方法建议只调用一次，毕竟只是代码生成，用一个连接就行。
      *
      * @return Connection
-     * @see DbQueryDecorator#getConnection()
      */
     public Connection getConn() {
         try {

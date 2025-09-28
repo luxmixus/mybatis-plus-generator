@@ -40,8 +40,8 @@ import java.util.Map;
  * </p>
  * <p>
  * FAQ:
- * 1.Mysql无法读取表注释: 链接增加属性 remarks=true和useInformationSchema=true 或者通过{@link io.github.bootystar.mybatisplus.generator.config.support.DataSourceConfig.Adapter#addConnectionProperty(String, String)}设置
- * 2.Oracle无法读取注释: 增加属性remarks=true，也有些驱动版本说是增加remarksReporting=true {@link io.github.bootystar.mybatisplus.generator.config.support.DataSourceConfig.Adapter#addConnectionProperty(String, String)}
+ * 1.Mysql无法读取表注释: 链接增加属性 remarks=true和useInformationSchema=true 或者通过io.github.bootystar.mybatisplus.generator.config.support.DataSourceConfig.Adapter#addConnectionProperty(String, String)设置
+ * 2.Oracle无法读取注释: 增加属性remarks=true，也有些驱动版本说是增加remarksReporting=true io.github.bootystar.mybatisplus.generator.config.support.DataSourceConfig.Adapter#addConnectionProperty(String, String)
  * </p>
  * @since 3.5.3
  */

@@ -2,6 +2,7 @@ package io.github.bootystar.mybatisplus.generator.config.support;
 
 import com.baomidou.mybatisplus.core.toolkit.StringPool;
 import com.baomidou.mybatisplus.core.toolkit.StringUtils;
+import io.github.bootystar.mybatisplus.generator.config.Configurer;
 import io.github.bootystar.mybatisplus.generator.config.enums.OutputFile;
 import io.github.bootystar.mybatisplus.generator.config.po.CustomFile;
 import io.github.bootystar.mybatisplus.generator.config.po.TableInfo;
@@ -244,6 +245,27 @@ public class OutputConfig implements ITemplate {
         return map;
     }
 
+    /**
+     * 根据设置处理文件是否构建
+     *
+     * @param configurer 配置器
+     */
+    public void processOutput(Configurer configurer) {
+        GlobalConfig globalConfig = configurer.getGlobalConfig();
+        if (!globalConfig.isGenerateInsert()){
+            this.insertDTO.adapter().disable();
+        }
+        if (!globalConfig.isGenerateUpdate()){
+            this.updateDTO.adapter().disable();
+        }
+        if (!globalConfig.isGenerateQuery()){
+            this.queryDTO.adapter().disable();
+            if (!globalConfig.isEnhancer()){
+                this.queryVO.adapter().disable();
+            }
+        }
+    }
+    
     public Adapter adapter() {
         return new Adapter(this);
     }

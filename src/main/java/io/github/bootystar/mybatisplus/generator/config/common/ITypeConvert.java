@@ -37,7 +37,7 @@ public interface ITypeConvert {
      * @return ignore
      */
     default IColumnType processTypeConvert(GlobalConfig globalConfig, TableField tableField) {
-        return processTypeConvert(globalConfig, tableField.getType());
+        return processTypeConvert(globalConfig, tableField.getColumnType().getType());
     }
 
     /**
