@@ -131,6 +131,9 @@ public class ControllerConfig implements ITemplate {
         String requestBaseUrl = Stream.of(this.baseUrl, outputConfig.getModuleName(), url)
                 .filter(StringUtils::isNotBlank)
                 .collect(Collectors.joining("/"));
+        if(!requestBaseUrl.startsWith("/")){
+            requestBaseUrl = "/" + requestBaseUrl;
+        }
         data.put("requestBaseUrl", requestBaseUrl);
         data.put("crossOrigin", this.crossOrigin);
         data.put("restful", this.restful);
@@ -429,6 +432,7 @@ public class ControllerConfig implements ITemplate {
          * 指定用于查询的类
          *
          * @return this
+         * @deprecated 已弃用的方法
          */
         @Deprecated
         public Adapter queryParam(Class<?> queryDTO) {
