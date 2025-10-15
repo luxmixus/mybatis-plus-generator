@@ -65,8 +65,8 @@ public class FastGenerator {
                 )
                 .global(e -> e
                         .dateType(DateType.TIME_PACK)
-                        .enableLombok()
-                        .enableCommentLink()
+//                        .enableLombok()
+//                        .enableCommentLink()
 //                        .enableCommentUUID()
                 )
                 .output(e -> e
@@ -122,8 +122,8 @@ public class FastGenerator {
 //                        .enableQueryVOExtendsEntity()
                                 .addEditExcludeColumns("create_time", "update_time")
                 )
-                .mapper(e -> e.
-                        mapperAnnotation(org.apache.ibatis.annotations.Mapper.class)
+                .mapper(e -> e
+                        .mapperAnnotation(org.apache.ibatis.annotations.Mapper.class)
                         .sortColumn("order", false)
                         .sortColumn("rank", false)
                         .sortColumn("sort", false)

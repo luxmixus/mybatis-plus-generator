@@ -281,6 +281,18 @@ public class GlobalConfig implements ITemplate {
         }
 
         /**
+         * 禁用lombok模型
+         *
+         * @return this
+         * @deprecated 默认值,无需设置
+         */
+        @Deprecated
+        public Adapter disableLombok() {
+            this.config.lombok = true;
+            return this;
+        }
+
+        /**
          * 开启链式getter和setter
          *
          * @return this
@@ -298,6 +310,18 @@ public class GlobalConfig implements ITemplate {
          */
         public Adapter enableCommentLink() {
             this.config.commentLink = true;
+            return this;
+        }
+        
+        /**
+         * 禁用文档注释添加相关类链接
+         *
+         * @return this
+         * @deprecated 默认值,无需设置
+         */
+        @Deprecated
+        public Adapter disableCommentLink() {
+            this.config.commentLink = false;
             return this;
         }
 

@@ -331,6 +331,19 @@ public class OutputConfig implements ITemplate {
         }
 
         /**
+         * 启用打开输出目录
+         *
+         * @return this
+         * @deprecated 默认值,无需设置
+         */
+        @Deprecated
+        public Adapter enableOpenOutputDir() {
+            this.config.open = false;
+            return this;
+        }
+        
+
+        /**
          * 实体类配置
          *
          * @param adapter 适配器
