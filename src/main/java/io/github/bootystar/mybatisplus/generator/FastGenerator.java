@@ -65,8 +65,8 @@ public class FastGenerator {
                 )
                 .global(e -> e
                         .dateType(DateType.TIME_PACK)
-//                        .enableLombok()
-//                        .enableCommentLink()
+                        .enableLombok()
+                        .enableCommentLink()
 //                        .enableCommentUUID()
                 )
                 .output(e -> e
