@@ -108,7 +108,7 @@
         ${schemaName}${table.name} a
         <where>
         #if(${enhancer})
-            <include refid="io.github.bootystar.mybatisplus.enhancer.EnhancedMapper.queryFragment"/>
+            <include refid="io.github.luxmixus.mybatisplus.enhancer.EnhancedMapper.queryFragment"/>
         #else
             <include refid="queryFragment"/>
         #end
@@ -125,7 +125,7 @@
         </where>
         <trim prefix="ORDER BY" prefixOverrides=",">
         #if(${enhancer})
-            <include refid="io.github.bootystar.mybatisplus.enhancer.EnhancedMapper.sortFragment"/>
+            <include refid="io.github.luxmixus.mybatisplus.enhancer.EnhancedMapper.sortFragment"/>
         #end
             #if(${orderBySql})
             , ${orderBySql}

@@ -1,6 +1,6 @@
 # mybatis-plus-generator
 
-[![Maven Central](https://img.shields.io/maven-central/v/io.github.bootystar/mybatis-plus-generator)](https://mvnrepository.com/artifact/io.github.bootystar/mybatis-plus-generator)
+[![Maven Central](https://img.shields.io/maven-central/v/io.github.luxmixus/mybatis-plus-generator)](https://mvnrepository.com/artifact/io.github.luxmixus/mybatis-plus-generator)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)
 
 
@@ -19,17 +19,17 @@ MyBatis-Plus 代码生成器，提供了比官方代码生成器更丰富的功�
 
 ## 仓库地址
 
-- GitHub: https://github.com/bootystar/mybatis-plus-generator
-- Maven Central: https://central.sonatype.com/artifact/io.github.bootystar/mybatis-plus-generator
+- GitHub: https://github.com/luxmixus/mybatis-plus-generator
+- Maven Central: https://central.sonatype.com/artifact/io.github.luxmixus/mybatis-plus-generator
 
 ## Maven依赖
 
 当前最新版本为:  
-[![Maven Central](https://img.shields.io/maven-central/v/io.github.bootystar/mybatis-plus-generator)](https://mvnrepository.com/artifact/io.github.bootystar/mybatis-plus-generator)
+[![Maven Central](https://img.shields.io/maven-central/v/io.github.luxmixus/mybatis-plus-generator)](https://mvnrepository.com/artifact/io.github.luxmixus/mybatis-plus-generator)
 
 ```xml
 <dependency>
-    <groupId>io.github.bootystar</groupId>
+    <groupId>io.github.luxmixus</groupId>
     <artifactId>mybatis-plus-generator</artifactId>
     <version>latest</version>
 </dependency>
@@ -37,7 +37,7 @@ MyBatis-Plus 代码生成器，提供了比官方代码生成器更丰富的功�
 
 ## 快速开始
 
-使用 [FastGenerator](src/main/java/io/github/bootystar/mybatisplus/generator/FastGenerator.java) 可以快速生成代码：
+使用 [FastGenerator](src/main/java/io/github/luxmixus/mybatisplus/generator/FastGenerator.java) 可以快速生成代码：
 
 ```java
 public static void main(String[] args) {
